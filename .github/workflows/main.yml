@@ -1,0 +1,12 @@
+name: Greet Workflow
+
+on: [push]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello to Prahalyaa
+        uses: ./.github/actions/say-hello
+        with:
+          name: "Prahalyaa"
